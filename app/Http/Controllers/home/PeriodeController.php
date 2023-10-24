@@ -45,4 +45,18 @@ class PeriodeController extends Controller
             'periode' => Periode::findOrFail($id)
         ]);
     }
+    public function update(Request $request)
+    {
+        Periode::where('id', $request->id)->update([
+            'mulai' => $request->mulai,
+            'akhir' => $request->akhir,
+            'target' => $request->target
+        ]);
+        $notification = [
+            'message' => 'Pertanyaan Berhasil Ditambahkan!',
+            'alert-type' => 'success'
+        ];
+
+        return redirect()->route('all.periode')->with($notification);
+    }
 }

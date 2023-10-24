@@ -10,7 +10,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Masukan Kritik dan Saran Anda
                                 </h5>
-                                <hr class="border border-primary border-3 opacity-75">
+                                <hr class="border-primary border-3 border opacity-75">
                                 <div class="container">
                                     <div class="row mb-3 mt-4">
                                         <label for="date" class="col-sm-2 col-form-label">Tanggal</label>
@@ -22,7 +22,7 @@
                                     <div class="row mb-3 mt-4">
                                         <label for="class" class="col-sm-2 col-form-label">Jenis</label>
                                         <div class="col-sm-10">
-                                            <select class="form-select form-select mb-3" id="class" name="class">
+                                            <select class="form-select mb-3" id="class" name="class">
                                                 <option value="kritik">Kritik</option>
                                                 <option value="saran">Saran</option>
                                             </select>
@@ -32,9 +32,9 @@
                                         <label for="text" class="col-sm-2 col-form-label mb-4">Kritik Dan Saran</label>
                                         <textarea name="comment" id="text" cols="30" rows="10" value="{{ old('comment') }}"></textarea>
                                     </div>
-                                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <div class="d-grid d-md-flex justify-content-md-center gap-2">
                                         <button type="submit"
-                                            class="btn btn-lg btn-dark rounded-pill py-2 px-4">Save</button>
+                                            class="btn btn-lg btn-dark rounded-pill px-4 py-2">Save</button>
                                     </div>
                                 </div>
                             </div>
